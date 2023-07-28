@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name" : "Playback rate changer",
+  "version": "0.0.1",
+  "description": "Add the functionality to manage a media's playback rate in active window.",
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "./service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["./content-script.js"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
