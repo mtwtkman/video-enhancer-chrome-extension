@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir chrome_extension
+cp icon16.png manifest.json content-script.js service-worker.js chrome_extension
+mv chrome_extension $1
