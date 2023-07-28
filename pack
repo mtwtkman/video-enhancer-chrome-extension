@@ -1,5 +1,6 @@
 #!/bin/sh
 
-mkdir chrome_extension
-cp icon16.png manifest.json content-script.js service-worker.js chrome_extension
+dest="chrome_extension/playbackrate-changer"
+mkdir -p $dest
+cp icon16.png manifest.json content-script.js service-worker.js $dest
 mv chrome_extension $1
